@@ -21,7 +21,7 @@ public class Practise extends BaseTestUtilityFile {
     String actualURL = "https://omayo.blogspot.com/";
 
     @Test
-    public void checkCurrentURLAndTitle(Method method) throws IOException {
+    public void checkCurrentURLAndTitle() throws IOException {
 
         String actualTitle = "omayo (QAFox.com)";
         driver.get(actualURL);
