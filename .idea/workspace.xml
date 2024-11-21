@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/ProductPage.java" afterDir="false" />
+    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="NewFiles: created Pages and functionality for category,product display page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PropertyFile/EcomProperty.property" beforeDir="false" afterPath="$PROJECT_DIR$/PropertyFile/EcomProperty.property" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ScreenShotsloginToApplication_2024_10_31T17_32_57.641539500.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ScreenShotsloginToApplication_2024_10_31T17_51_00.378085100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ScreenShotsloginToApplication_2024_10_31T17_52_15.396128800.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/PagesUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +22,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Practise" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -177,11 +164,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Practise.checkLinksAreUp" />
         <item itemvalue="TestNG.D:/GitHub public repo/PreethiSri-Selenium-Java-Project/XML_Files/testng.xml" />
+        <item itemvalue="TestNG.PurchaseProductTest.loginToApplication (1)" />
         <item itemvalue="TestNG.PurchaseProductTest.loginToApplication" />
         <item itemvalue="TestNG.PurchaseProductTest" />
-        <item itemvalue="TestNG.PurchaseProductTest.loginToApplication (1)" />
-        <item itemvalue="TestNG.Practise.checkLinksAreUp" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +190,17 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="NewFiles: created new project" />
