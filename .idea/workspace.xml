@@ -4,8 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="NewFiles: created Pages and functionality for category,product display page">
+    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="Conflicts resolved in master">
+      <change afterPath="$PROJECT_DIR$/TestData/UserData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utility/ExtentReportListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/API_Test/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2024_12_56_pm_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2024_12_56_pm__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/CartPage_2024_11_21T17_54_56.567353200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/CheckoutPage_2024_11_21T17_54_58.227374900.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/LoginPage_2024_11_21T17_54_46.535836900.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/OrderPage_2024_11_21T17_54_58.610731900.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/Product Gridwall Page_2024_11_21T17_54_49.217609.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/ProductPage_2024_11_21T17_54_52.044990300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/XML_Files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XML_Files/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +49,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -74,6 +99,23 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.D:/GitHub public repo/PreethiSri-Selenium-Java-Project/XML_Files/testng.xml">
+    <configuration name="BookAPI" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PreethiSri-Selenium-Java-Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API_Test.LibraryAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API_Test.LibraryAPI" />
+      <option name="MAIN_CLASS_NAME" value="API_Test.LibraryAPI.BookAPI" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="D:/GitHub public repo/PreethiSri-Selenium-Java-Project/XML_Files/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PreethiSri-Selenium-Java-Project" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/XML_Files/testng.xml" />
@@ -84,34 +126,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practise.checkLinksAreUp" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PlaceAPITest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PreethiSri-Selenium-Java-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BasicPractise.*" />
+          <option name="PATTERN" value="API_Test.MapAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="BasicPractise" />
-      <option name="MAIN_CLASS_NAME" value="BasicPractise.Practise" />
-      <option name="METHOD_NAME" value="checkLinksAreUp" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PurchaseProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PreethiSri-Selenium-Java-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EcomApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="EcomApp" />
-      <option name="MAIN_CLASS_NAME" value="EcomApp.PurchaseProductTest" />
+      <option name="PACKAGE_NAME" value="API_Test.PlaceAPI" />
+      <option name="MAIN_CLASS_NAME" value="API_Test.MapAPI.PlaceAPITest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -119,17 +143,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PurchaseProductTest.loginToApplication (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PlaceAPITest.addPlace (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PreethiSri-Selenium-Java-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="EcomApp.*" />
+          <option name="PATTERN" value="API_Test.MapAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="EcomApp" />
-      <option name="MAIN_CLASS_NAME" value="EcomApp.PurchaseProductTest" />
-      <option name="METHOD_NAME" value="loginToApplication" />
+      <option name="PACKAGE_NAME" value="API_Test.MapAPI" />
+      <option name="MAIN_CLASS_NAME" value="API_Test.MapAPI.PlaceAPITest" />
+      <option name="METHOD_NAME" value="addPlace" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -137,17 +161,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PurchaseProductTest.loginToApplication" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PlaceAPITest.addPlace" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PreethiSri-Selenium-Java-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="EcomApp.*" />
+          <option name="PATTERN" value="API_Test.MapAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="EcomApp" />
-      <option name="MAIN_CLASS_NAME" value="EcomApp.PurchaseProductTest" />
-      <option name="METHOD_NAME" value="loginToApplication" />
+      <option name="PACKAGE_NAME" value="API_Test.PlaceAPI" />
+      <option name="MAIN_CLASS_NAME" value="API_Test.MapAPI.PlaceAPITest" />
+      <option name="METHOD_NAME" value="addPlace" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaceAPITest.addPlace" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PreethiSri-Selenium-Java-Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API_Test.MapAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API_Test.PlaceAPI" />
+      <option name="MAIN_CLASS_NAME" value="API_Test.MapAPI.PlaceAPITest" />
+      <option name="METHOD_NAME" value="addPlace" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -156,19 +198,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.PurchaseProductTest" />
-      <item itemvalue="TestNG.PurchaseProductTest.loginToApplication" />
-      <item itemvalue="TestNG.PurchaseProductTest.loginToApplication (1)" />
+      <item itemvalue="TestNG.BookAPI" />
+      <item itemvalue="TestNG.PlaceAPITest" />
+      <item itemvalue="TestNG.PlaceAPITest.addPlace" />
+      <item itemvalue="TestNG.PlaceAPITest.addPlace (1)" />
       <item itemvalue="TestNG.D:/GitHub public repo/PreethiSri-Selenium-Java-Project/XML_Files/testng.xml" />
-      <item itemvalue="TestNG.Practise.checkLinksAreUp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Practise.checkLinksAreUp" />
         <item itemvalue="TestNG.D:/GitHub public repo/PreethiSri-Selenium-Java-Project/XML_Files/testng.xml" />
-        <item itemvalue="TestNG.PurchaseProductTest.loginToApplication (1)" />
-        <item itemvalue="TestNG.PurchaseProductTest.loginToApplication" />
-        <item itemvalue="TestNG.PurchaseProductTest" />
+        <item itemvalue="TestNG.PlaceAPITest.addPlace (1)" />
+        <item itemvalue="TestNG.PlaceAPITest.addPlace" />
+        <item itemvalue="TestNG.PlaceAPITest.addPlace (1)" />
+        <item itemvalue="TestNG.PlaceAPITest" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730185709618</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Conflicts resolved in master">
+      <created>1732172197565</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732172197565</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,19 +253,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="NewFiles: created new project" />
-    <option name="LAST_COMMIT_MESSAGE" value="NewFiles: created new project" />
+    <MESSAGE value="Conflicts resolved in master" />
+    <option name="LAST_COMMIT_MESSAGE" value="Conflicts resolved in master" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java</url>
-          <line>26</line>
+          <line>32</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java</url>
-          <line>45</line>
+          <line>55</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -224,15 +274,25 @@
           <line>27</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java</url>
           <line>27</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java</url>
-          <line>23</line>
+          <line>43</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/API_Test/UserData.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/API_Test/UserData.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

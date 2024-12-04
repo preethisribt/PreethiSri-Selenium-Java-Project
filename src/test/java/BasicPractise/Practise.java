@@ -1,6 +1,10 @@
 package BasicPractise;
 
 import BaseTest.BaseTestUtilityFile;
+import Utility.ExtentReportListener;
+import Utility.PagesUtility;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -15,22 +19,28 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.LocalDateTime;
+import java.util.Base64;
 import java.util.List;
 
 public class Practise extends BaseTestUtilityFile {
     String actualURL = "https://omayo.blogspot.com/";
-
+    PagesUtility pagesUtility;
     @Test
     public void checkCurrentURLAndTitle() throws IOException {
+        pagesUtility = new PagesUtility();
 
-        String actualTitle = "omayo (QAFox.com)";
+        String expectedTitle = "omayo (QAFox.com)";
         driver.get(actualURL);
-        String expectedURL = driver.getCurrentUrl();
-        String expectedTitle = driver.getTitle();
-//        getScreenshot(method, driver);
+        String actualURL = driver.getCurrentUrl();
+        String actualTitle = driver.getTitle();
+        ExtentReportListener.extentTest.log(Status.INFO, "actualURL " +actualURL);
+        ExtentReportListener.extentTest.log(Status.INFO, "actualTitle " +actualTitle);
+
+        String sc = pagesUtility.getScreenshot("LoginPage", driver);
+        ExtentReportListener.extentTest.pass("LoginPage", MediaEntityBuilder.createScreenCaptureFromPath(sc).build());
 
         Assert.assertEquals(actualTitle, expectedTitle);
-        Assert.assertEquals(actualURL, expectedURL);
+        Assert.assertEquals(actualURL, "https://omayo.blogspot.com/");
         driver.quit();
     }
 

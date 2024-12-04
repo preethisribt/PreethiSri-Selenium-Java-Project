@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="PreethiSri-Selenium-Java-Project" verbose="5">
-    <test name="Basic Tests">
+    <listeners>
+    <listener class-name="Utility.ExtentReportListener"></listener></listeners>
+    <test name="Basic Tests" verbose="5">
         <classes>
             <class name="BaseTest.BaseTestUtilityFile"/>
-            <class name="EcomApp.PurchaseProductTest">
+<!--            <class name="EcomApp.PurchaseProductTest">-->
+<!--                <methods>-->
+<!--                    <include name="loginToApplication"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="BasicPractise.Practise">-->
+<!--                <methods>-->
+<!--                    <include name="checkCurrentURLAndTitle"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+    <test name="API Tests">
+        <classes>
+            <class name="API_Test.MapAPI.PlaceAPITest">
                 <methods>
-                    <include name="loginToApplication"/>
+                    <include name="addPlace"/>
                 </methods>
             </class>
         </classes>
