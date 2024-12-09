@@ -23,16 +23,6 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
 public class PagesUtility {
-//    public RequestSpecification getRequestSpecification() {
-//
-//        RequestSpecification requestSpecification = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com/maps")
-//                .addHeader("Content-Type", "application/json")
-//                .addQueryParam("key", "qaclick123")
-//                .build();
-//
-//        return requestSpecification;
-//    }
-
     public ResponseSpecification getResponseSpecification(String statusLine) {
         ResponseSpecification responseSpecification = new ResponseSpecBuilder().expectStatusLine(statusLine).build();
         return responseSpecification;

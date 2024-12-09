@@ -3,6 +3,7 @@ package API_Test.MapAPI;
 import APIResources.Place.Location;
 import APIResources.Place.RegisterPlaceRequest;
 import APIResources.Place.RegisterPlaceResponse;
+import Data.EcomDataProvider;
 import Utility.ExtentReportListener;
 import Utility.PagesUtility;
 import com.aventstack.extentreports.Status;
@@ -20,14 +21,14 @@ import java.util.List;
 public class PlaceAPITest {
     PagesUtility pagesUtility;
 
-    @Test
-    public void addPlace() {
+    @Test(dataProvider = "APIData", dataProviderClass = EcomDataProvider.class)
+    public void addPlace(double latitude, double longitude, int accuracy, String name, String phone, String street) {
         pagesUtility = new PagesUtility();
 
         RequestSpecification requestSpecification = RestAssured.given().baseUri("https://rahulshettyacademy.com/maps")
                 .header("Content-Type", "application/json")
                 .queryParam("key", "qaclick123")
-                .body(addPlaceData());
+                .body(addPlaceData(latitude, longitude, accuracy, name, phone, street));
 
         Response response = requestSpecification.when()
                 .post("/api/place/add/json/");
@@ -46,18 +47,18 @@ public class PlaceAPITest {
         ExtentReportListener.extentTest.log(Status.INFO, "Response  status line " + response.statusLine());
     }
 
-    public RegisterPlaceRequest addPlaceData() {
+    public RegisterPlaceRequest addPlaceData(double latitude, double longitude, int accuracy, String name, String phone, String street) {
         List<String> list = new LinkedList<>(Arrays.asList("home", "residency"));
         Location location = new Location();
-        location.setLat(-10.4578);
-        location.setLng(12.7887);
+        location.setLat(latitude);
+        location.setLng(longitude);
 
         RegisterPlaceRequest registerPlaceRequest = new RegisterPlaceRequest();
         registerPlaceRequest.setLocation(location);
-        registerPlaceRequest.setAccuracy(10);
-        registerPlaceRequest.setName("Residency A");
-        registerPlaceRequest.setPhone_number("(+61) 767 444 4444");
-        registerPlaceRequest.setAddress("abc street");
+        registerPlaceRequest.setAccuracy(accuracy);
+        registerPlaceRequest.setName(name);
+        registerPlaceRequest.setPhone_number(phone);
+        registerPlaceRequest.setAddress(street);
         registerPlaceRequest.setTypes(list);
         registerPlaceRequest.setWebsite("http://google.com");
         registerPlaceRequest.setLanguage("English-AUS");
