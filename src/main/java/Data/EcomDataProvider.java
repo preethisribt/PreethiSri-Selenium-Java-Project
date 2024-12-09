@@ -57,10 +57,8 @@ public class EcomDataProvider {
             row = xssfSheet.getRow(i);
             for (int j = 0; j < columnCount; j++) {
                 cellType = row.getCell(j).getCellType();
-                if (row.getCell(j).getRawValue().contains(".")){
-                    if (cellType.equals(CellType.NUMERIC))
+                if (cellType.equals(CellType.NUMERIC) && row.getCell(j).getRawValue().contains("."))
                         objects[k][j] = row.getCell(j).getNumericCellValue();
-                }
                 else if (cellType.equals(CellType.NUMERIC))
                         objects[k][j] = Integer.parseInt(row.getCell(j).getRawValue());
                 else if (cellType.equals(CellType.STRING))

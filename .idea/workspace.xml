@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="Conflicts resolved in master" />
+    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XML_Files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XML_Files/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/EcomData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/EcomData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733718814448</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removed Json">
+      <created>1733719039809</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733719039809</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,7 +238,8 @@
     <MESSAGE value="NewFiles: created new project" />
     <MESSAGE value="Conflicts resolved in master" />
     <MESSAGE value="Parametarized test with excel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Parametarized test with excel" />
+    <MESSAGE value="Removed Json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed Json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -271,11 +285,6 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
           <line>76</line>
           <option name="timeStamp" value="44" />
@@ -302,8 +311,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java</url>
-          <line>71</line>
+          <line>69</line>
           <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
