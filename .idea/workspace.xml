@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="Conflicts resolved in master">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="Conflicts resolved in master" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732172197565</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Parametarized test with excel">
+      <created>1733718814448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733718814448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,7 +224,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="NewFiles: created new project" />
     <MESSAGE value="Conflicts resolved in master" />
-    <option name="LAST_COMMIT_MESSAGE" value="Conflicts resolved in master" />
+    <MESSAGE value="Parametarized test with excel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parametarized test with excel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
