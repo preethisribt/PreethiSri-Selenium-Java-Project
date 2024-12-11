@@ -44,7 +44,7 @@ public class EcomDataProvider {
 
         rowCount = xssfSheet.getLastRowNum();
         columnCount = xssfSheet.getRow(0).getLastCellNum();
-        Object[][] objects = new Object[rowCount][columnCount];
+        Object[][] objects = new Object[rowCount-2][columnCount];
 
         //read data header
         for (int i = 0; i < columnCount; i++) {
@@ -53,7 +53,7 @@ public class EcomDataProvider {
 
         //read and initialize object[][]
         int k = 0;
-        for (int i = 1; i <= rowCount; i++) {
+        for (int i = 1; i < rowCount-1; i++) {
             row = xssfSheet.getRow(i);
             for (int j = 0; j < columnCount; j++) {
                 cellType = row.getCell(j).getCellType();
@@ -65,6 +65,8 @@ public class EcomDataProvider {
                     objects[k][j] = row.getCell(j).getStringCellValue();
                 else if (cellType.equals(CellType.NUMERIC))
                     objects[k][j] = row.getCell(j).getNumericCellValue();
+
+//                System.out.println( objects[k][j]);
             }
             k++;
         }

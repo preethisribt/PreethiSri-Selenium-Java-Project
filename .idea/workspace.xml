@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="">
+    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="API added validation for getAPI and deserialization">
+      <change afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/GetLocationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/LocationResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XML_Files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XML_Files/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Data/EcomData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/EcomData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,43 +291,48 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>76</line>
+          <line>137</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java</url>
           <line>17</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>57</line>
+          <line>117</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java</url>
-          <line>69</line>
+          <line>71</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java</url>
           <line>24</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="74" />
+          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="88" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

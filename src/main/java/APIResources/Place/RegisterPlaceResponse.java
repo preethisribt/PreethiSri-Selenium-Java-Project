@@ -1,11 +1,12 @@
 package APIResources.Place;
 
 public class RegisterPlaceResponse {
-   String status;
-   String  place_id;
-   String  scope;
-    String  reference;
-    String  id;
+    String status;
+    String place_id;
+    String scope;
+    String reference;
+    String id;
+
     public String getStatus() {
         return status;
     }

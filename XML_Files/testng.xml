@@ -3,23 +3,23 @@
 <suite name="PreethiSri-Selenium-Java-Project" verbose="5">
     <listeners>
     <listener class-name="Utility.ExtentReportListener"></listener></listeners>
-    <test name="Basic Tests" verbose="5">
-        <classes>
-            <class name="BaseTest.BaseTestUtilityFile"/>
-            <class name="EcomApp.PurchaseProductTest">
-                <methods>
-                    <include name="loginToApplication"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-<!--    <test name="API Tests">-->
+<!--    <test name="Basic Tests" verbose="5">-->
 <!--        <classes>-->
-<!--            <class name="API_Test.MapAPI.PlaceAPITest">-->
+<!--            <class name="BaseTest.BaseTestUtilityFile"/>-->
+<!--            <class name="EcomApp.PurchaseProductTest">-->
 <!--                <methods>-->
-<!--                    <include name="addPlace"/>-->
+<!--                    <include name="loginToApplication"/>-->
 <!--                </methods>-->
 <!--            </class>-->
 <!--        </classes>-->
 <!--    </test>-->
+    <test name="API Tests">
+        <classes>
+            <class name="API_Test.MapAPI.PlaceAPITest">
+                <methods>
+                    <include name="addAndGetPlace"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
