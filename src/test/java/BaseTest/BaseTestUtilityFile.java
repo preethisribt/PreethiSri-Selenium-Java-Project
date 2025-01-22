@@ -16,7 +16,8 @@ public class BaseTestUtilityFile {
         DriverFactory driverFactory = new DriverFactory();
         PagesUtility pagesUtility = new PagesUtility();
 
-        URL = pagesUtility.readPropertyFile().getProperty("ecomURL");
+//        URL = pagesUtility.readPropertyFile().getProperty("ecomURL");
+        URL = pagesUtility.readPropertyFile().getProperty("paraBankURL");
         driver = driverFactory.getDriver("chrome");
 
         driver.get(URL);

@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 public class DriverFactory {
     Map<String, Supplier<WebDriver>> driverMap;
 
-    DriverFactory() {
+    public DriverFactory() {
         driverMap = new HashMap<>();
         driverMap.put("chrome", this::chromeDriver);
         driverMap.put("firefox", this::firefoxDriver);

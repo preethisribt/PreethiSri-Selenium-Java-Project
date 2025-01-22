@@ -1,11 +1,15 @@
 package EcomApp;
 
 import BaseTest.BaseTestUtilityFile;
+import BaseTest.DriverFactory;
 import Data.EcomDataProvider;
 import Pages.CartPage;
 import Pages.CategoryPage;
 import Pages.LoginPage;
 import Pages.ProductPage;
+import Utility.PagesUtility;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -28,5 +32,22 @@ public class PurchaseProductTest extends BaseTestUtilityFile {
         cartPage.selectCart(products);
         cartPage.placeOrder();
         cartPage.orderMessageValidation();
+    }
+
+    @BeforeMethod
+    public void initializeDriver() throws IOException {
+        DriverFactory driverFactory = new DriverFactory();
+        PagesUtility pagesUtility = new PagesUtility();
+
+        URL = pagesUtility.readPropertyFile().getProperty("ecomURL");
+        driver = driverFactory.getDriver("chrome");
+
+        driver.get(URL);
+        driver.manage().window().maximize();
+    }
+
+    @AfterMethod
+    public void quitDriver() {
+        driver.quit();
     }
 }

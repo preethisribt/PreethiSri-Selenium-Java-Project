@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="API added validation for getAPI and deserialization">
-      <change afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/GetLocationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/LocationResponse.java" afterDir="false" />
+    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="API added validation for getAPI,class for deserialization class">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ParaBankTestCases/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PropertyFile/EcomProperty.property" beforeDir="false" afterPath="$PROJECT_DIR$/PropertyFile/EcomProperty.property" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XML_Files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XML_Files/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/EcomData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/EcomData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733719039809</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="API added validation for getAPI,class for deserialization class">
+      <created>1733900093516</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733900093516</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,7 +250,8 @@
     <MESSAGE value="Conflicts resolved in master" />
     <MESSAGE value="Parametarized test with excel" />
     <MESSAGE value="Removed Json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Json" />
+    <MESSAGE value="API added validation for getAPI,class for deserialization class" />
+    <option name="LAST_COMMIT_MESSAGE" value="API added validation for getAPI,class for deserialization class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -266,7 +273,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -286,7 +293,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java</url>
-          <line>21</line>
+          <line>25</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -296,7 +303,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java</url>
-          <line>17</line>
+          <line>21</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint type="java-line">

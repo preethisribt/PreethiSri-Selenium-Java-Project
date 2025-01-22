@@ -13,13 +13,20 @@
 <!--            </class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="API Tests">
+
+    <test name="Bank Tests" verbose="5">
         <classes>
-            <class name="API_Test.MapAPI.PlaceAPITest">
-                <methods>
-                    <include name="addAndGetPlace"/>
-                </methods>
-            </class>
+            <class name="BaseTest.BaseTestUtilityFile"/>
+            <class name="EcomApp.PurchaseProductTest"/>
         </classes>
     </test>
+<!--    <test name="API Tests">-->
+<!--        <classes>-->
+<!--            <class name="API_Test.MapAPI.PlaceAPITest">-->
+<!--                <methods>-->
+<!--                    <include name="addAndGetPlace"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
