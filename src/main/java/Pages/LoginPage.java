@@ -1,40 +1,45 @@
 package Pages;
 
 import Utility.PagesUtility;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import java.io.IOException;
-import java.lang.reflect.Method;
+import java.util.Properties;
 
 public class LoginPage {
+    private By userNameText = By.name("username");
+    private By passwordText = By.name("password");
+    private By loginButton = By.cssSelector("input[value='Log In']");
+    private By logoutButton = By.linkText("Log Out");
     WebDriver driver;
     PagesUtility pagesUtility;
+    Properties properties;
+    RegistrationPage registrationPage;
 
-    public LoginPage(WebDriver driver) {
+    public LoginPage(WebDriver driver) throws IOException {
+
         this.driver = driver;
         pagesUtility = new PagesUtility();
+        properties = pagesUtility.readPropertyFile();
+//        registrationPage = new RegistrationPage(driver);
     }
 
-    By loginButton = By.id("login2");
-    By emailField = By.id("loginusername");
-    By passwordfield = By.id("loginpassword");
-    By loginSubmitButton = By.xpath("//button[text()='Log in']");
-    By logoutButton = By.id("logout2");
+    public void LoginToApplication() throws IOException {
+        pagesUtility.getScreenshot("LoginPage", driver);
+        driver.findElement(userNameText).sendKeys(RegistrationPage.userName);
+        ChainTestListener.log("Entered user name");
 
-    public void login() throws IOException {
-        pagesUtility.waitForElementVisibility(driver,loginButton);
+        driver.findElement(passwordText).sendKeys(RegistrationPage.password);
+        ChainTestListener.log("Entered password");
+
         driver.findElement(loginButton).click();
-        pagesUtility.waitForElementVisibility(driver,emailField);
-        driver.findElement(emailField).sendKeys(pagesUtility.readPropertyFile().getProperty("userName"));
-        driver.findElement(passwordfield).sendKeys(pagesUtility.readPropertyFile().getProperty("password"));
-        driver.findElement(loginSubmitButton).click();
+        ChainTestListener.log("clicked on login button");
 
-        pagesUtility.getScreenshot("LoginPage",driver);
-        pagesUtility.waitForElementVisibility(driver,logoutButton);
-
-        boolean checkLogoutButton = driver.findElement(logoutButton).isDisplayed();
-        Assert.assertTrue(checkLogoutButton);
+        Assert.assertTrue(driver.findElement(logoutButton).isDisplayed());
+        ChainTestListener.log("Validated logout button is displayed");
+        pagesUtility.getScreenshot("LogoutPage", driver);
     }
 }

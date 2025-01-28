@@ -4,16 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="API added validation for getAPI,class for deserialization class">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ParaBankTestCases/LoginTest.java" afterDir="false" />
+    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/RegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/chaintest.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoadTestDataInToDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ParaBankTestCases/HomePageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ParaBankTestCases/OpenAccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PropertyFile/EcomProperty.property" beforeDir="false" afterPath="$PROJECT_DIR$/PropertyFile/EcomProperty.property" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PropertyFile/EcomProperty.property" beforeDir="false" afterPath="$PROJECT_DIR$/PropertyFile/DataProperty.property" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/LoginPage_2024_11_30T18_58_20.524128500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/LoginPage_2024_11_30T19_01_03.178402300.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/XML_Files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XML_Files/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/.~lock.EcomData.xlsx#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProductPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/ExtentReportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/ExtentReportListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ParaBankTestCases/LoginTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +43,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/ParaBank" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -35,9 +63,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -231,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733900093516</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Bank app">
+      <created>1737585621665</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737585621665</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,7 +283,8 @@
     <MESSAGE value="Parametarized test with excel" />
     <MESSAGE value="Removed Json" />
     <MESSAGE value="API added validation for getAPI,class for deserialization class" />
-    <option name="LAST_COMMIT_MESSAGE" value="API added validation for getAPI,class for deserialization class" />
+    <MESSAGE value="Bank app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bank app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -267,18 +300,13 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Pages/LoginPage.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java</url>
-          <line>28</line>
+          <url>file://$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java</url>
+          <line>44</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java</url>
-          <line>33</line>
+          <line>35</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -293,22 +321,17 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java</url>
-          <line>25</line>
+          <line>21</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>137</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java</url>
-          <line>21</line>
+          <line>17</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>117</line>
+          <line>110</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -317,29 +340,54 @@
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>89</line>
+          <line>82</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
           <line>64</line>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
           <line>54</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>126</line>
+          <line>118</line>
           <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/LoginPage.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/RegistrationPage.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/LoadTestDataInToDB.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ParaBankTestCases/OpenAccountTest.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

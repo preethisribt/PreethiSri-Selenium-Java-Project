@@ -1,0 +1,5 @@
+browser = chrome
+ecomURL = https://www.demoblaze.com/
+paraBankURL = https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC
+userName = PreethiTestAutomation
+password = PreethiTestAutomation@123

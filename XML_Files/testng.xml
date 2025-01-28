@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="PreethiSri-Selenium-Java-Project" verbose="5">
+<suite name="PreethiSri-Selenium-Java-Project" verbose="5" parallel="classes" preserve-order="true" thread-count="2">
+
     <listeners>
-    <listener class-name="Utility.ExtentReportListener"></listener></listeners>
+        <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"></listener>
+    </listeners>
+
+
+    <test name="Test Data Generation" verbose="5" preserve-order="true">
+        <parameter name="headless" value="true"/>
+        <classes>
+            <class name="BaseTest.BaseTest"/>
+            <class name="ParaBankTestCases.HomePageTest"/>
+            <class name="LoadTestDataInToDB"/>
+        </classes>
+    </test>
+
 <!--    <test name="Basic Tests" verbose="5">-->
+<!--        <parameter name="headless" value="false"/>-->
 <!--        <classes>-->
-<!--            <class name="BaseTest.BaseTestUtilityFile"/>-->
-<!--            <class name="EcomApp.PurchaseProductTest">-->
-<!--                <methods>-->
-<!--                    <include name="loginToApplication"/>-->
-<!--                </methods>-->
-<!--            </class>-->
+<!--            <class name="BaseTest.BaseTest"/>-->
+<!--            <class name="ParaBankTestCases.OpenAccountTest"/>-->
 <!--        </classes>-->
 <!--    </test>-->
 
-    <test name="Bank Tests" verbose="5">
-        <classes>
-            <class name="BaseTest.BaseTestUtilityFile"/>
-            <class name="EcomApp.PurchaseProductTest"/>
-        </classes>
-    </test>
-<!--    <test name="API Tests">-->
-<!--        <classes>-->
-<!--            <class name="API_Test.MapAPI.PlaceAPITest">-->
-<!--                <methods>-->
-<!--                    <include name="addAndGetPlace"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <!--    <test name="API Tests">-->
+    <!--        <classes>-->
+    <!--            <class name="API_Test.MapAPI.PlaceAPITest">-->
+    <!--                <methods>-->
+    <!--                    <include name="addAndGetPlace"/>-->
+    <!--                </methods>-->
+    <!--            </class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 </suite>

@@ -2,9 +2,9 @@ package API_Test.MapAPI;
 
 import APIResources.Place.*;
 import Data.EcomDataProvider;
-import Utility.ExtentReportListener;
+
 import Utility.PagesUtility;
-import com.aventstack.extentreports.Status;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.QueryableRequestSpecification;
@@ -67,13 +67,6 @@ public class PlaceAPITest {
 
         //print in report
         QueryableRequestSpecification queryableRequestSpecification = SpecificationQuerier.query(requestSpecification);
-        ExtentReportListener.extentTest.log(Status.INFO, "Base URI  " + queryableRequestSpecification.getBaseUri());
-        ExtentReportListener.extentTest.log(Status.INFO, "Request Body  " + queryableRequestSpecification.getBody());
-
-        ExtentReportListener.extentTest.log(Status.INFO, "Response  " + response.asPrettyString());
-        ExtentReportListener.extentTest.log(Status.INFO, "Response  status code " + String.valueOf(response.statusCode()));
-        ExtentReportListener.extentTest.log(Status.INFO, "Response  status line " + response.statusLine());
-
         System.out.println("Request Body  " + queryableRequestSpecification.getBody());
     }
 
@@ -123,7 +116,6 @@ public class PlaceAPITest {
         registerPlaceRequest.setWebsite("http://google.com");
         registerPlaceRequest.setLanguage("English-AUS");
 
-        ExtentReportListener.extentTest.log(Status.INFO, "Added Payload body");
         return registerPlaceRequest;
     }
 
@@ -135,7 +127,5 @@ public class PlaceAPITest {
         String id = response.getId();
 
         Assert.assertTrue(place_id_data != null);
-        ExtentReportListener.extentTest.log(Status.INFO, "status " + status);
-        ExtentReportListener.extentTest.log(Status.INFO, "place_id " + place_id_data);
     }
 }
