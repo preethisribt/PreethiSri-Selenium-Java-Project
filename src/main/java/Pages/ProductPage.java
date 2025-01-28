@@ -1,6 +1,7 @@
 package Pages;
 
 import Utility.PagesUtility;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -25,10 +26,12 @@ public class ProductPage {
         pagesUtility.getScreenshot("Product Gridwall Page", driver);
         pagesUtility.waitForElementVisibility(driver, selectProductLink);
         driver.findElement(selectProductLink).click();
+        ChainTestListener.log("product " + product + "is selected");
 
         pagesUtility.waitForElementVisibility(driver, addToCartButton);
         pagesUtility.getScreenshot("ProductPage", driver);
         driver.findElement(addToCartButton).click();
+        ChainTestListener.log("product " + product + "added to cart");
     }
 
     public void verifyProductAddedInCartPopup() {

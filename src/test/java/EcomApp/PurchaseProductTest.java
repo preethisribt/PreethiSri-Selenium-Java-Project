@@ -6,6 +6,7 @@ import Pages.CartPage;
 import Pages.CategoryPage;
 import Pages.LoginPage;
 import Pages.ProductPage;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.testng.annotations.Test;
 
 import java.io.IOException;

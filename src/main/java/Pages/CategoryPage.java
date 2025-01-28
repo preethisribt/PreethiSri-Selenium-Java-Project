@@ -1,6 +1,7 @@
 package Pages;
 
 import Utility.PagesUtility;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -37,5 +38,6 @@ public class CategoryPage {
                 Assert.fail("Please provide proper category name");
                 break;
         }
+        ChainTestListener.log("category " + category + "selected");
     }
 }

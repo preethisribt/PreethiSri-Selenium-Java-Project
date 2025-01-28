@@ -2,24 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="PreethiSri-Selenium-Java-Project" verbose="5">
     <listeners>
-    <listener class-name="Utility.ExtentReportListener"></listener></listeners>
-<!--    <test name="Basic Tests" verbose="5">-->
-<!--        <classes>-->
-<!--            <class name="BaseTest.BaseTestUtilityFile"/>-->
-<!--            <class name="EcomApp.PurchaseProductTest">-->
-<!--                <methods>-->
-<!--                    <include name="loginToApplication"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
-    <test name="API Tests">
+    <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
+    </listeners>
+
+    <test name="Basic Tests">
         <classes>
-            <class name="API_Test.MapAPI.PlaceAPITest">
-                <methods>
-                    <include name="addAndGetPlace"/>
-                </methods>
-            </class>
+            <class name="BaseTest.BaseTestUtilityFile"/>
+            <class name="EcomApp.PurchaseProductTest"/>
         </classes>
     </test>
+    <!--    <test name="API Tests">-->
+    <!--        <classes>-->
+    <!--            <class name="API_Test.MapAPI.PlaceAPITest">-->
+    <!--                <methods>-->
+    <!--                    <include name="addAndGetPlace"/>-->
+    <!--                </methods>-->
+    <!--            </class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 </suite>

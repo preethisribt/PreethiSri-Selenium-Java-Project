@@ -1,7 +1,6 @@
 package Utility;
 
-import com.aventstack.extentreports.Status;
-import io.restassured.RestAssured;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -23,21 +22,23 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
 public class PagesUtility {
+    public static File src;
     public ResponseSpecification getResponseSpecification(String statusLine) {
         ResponseSpecification responseSpecification = new ResponseSpecBuilder().expectStatusLine(statusLine).build();
         return responseSpecification;
     }
 
-    public String getScreenshot(String page, WebDriver driver) throws IOException {
+    public void getScreenshot(String page, WebDriver driver) throws IOException {
         TakesScreenshot screenshot = ((TakesScreenshot) driver);
-        File src = screenshot.getScreenshotAs(OutputType.FILE);
+        src = screenshot.getScreenshotAs(OutputType.FILE);
+
         String filePath = "/ScreenShots/" + page + "_" + LocalDateTime.now() + ".png";
         String modifiedFilePath = filePath.replaceAll("[:-]", "_");
         String fullPath = System.getProperty("user.dir") + modifiedFilePath;
 
-        System.out.println(fullPath);
         FileUtils.copyFile(src, new File(fullPath));
-        return fullPath;
+        // uncomment below line to attach screenshot in the index.html for all TC
+        ChainTestListener.embed(src,"image/png");
     }
 
     public Properties readPropertyFile() throws IOException {

@@ -1,6 +1,7 @@
 package Pages;
 
 import Utility.PagesUtility;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -26,15 +27,21 @@ public class LoginPage {
     public void login() throws IOException {
         pagesUtility.waitForElementVisibility(driver,loginButton);
         driver.findElement(loginButton).click();
+        ChainTestListener.log("login application clicked");
+
         pagesUtility.waitForElementVisibility(driver,emailField);
         driver.findElement(emailField).sendKeys(pagesUtility.readPropertyFile().getProperty("userName"));
         driver.findElement(passwordfield).sendKeys(pagesUtility.readPropertyFile().getProperty("password"));
+        ChainTestListener.log("email and password entered");
+
         driver.findElement(loginSubmitButton).click();
+        ChainTestListener.log("login button clicked");
 
         pagesUtility.getScreenshot("LoginPage",driver);
         pagesUtility.waitForElementVisibility(driver,logoutButton);
 
         boolean checkLogoutButton = driver.findElement(logoutButton).isDisplayed();
         Assert.assertTrue(checkLogoutButton);
+        ChainTestListener.log("Logout button visibility checked");
     }
 }

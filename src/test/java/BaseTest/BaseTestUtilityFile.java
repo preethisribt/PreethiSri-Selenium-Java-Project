@@ -1,15 +1,25 @@
 package BaseTest;
 
 import Utility.PagesUtility;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BaseTestUtilityFile {
     public WebDriver driver;
     public String URL;
+
+    MongoCollection<Document> mongoCollection;
 
     @BeforeMethod
     public void initializeDriver() throws IOException {
@@ -26,5 +36,20 @@ public class BaseTestUtilityFile {
     @AfterMethod
     public void quitDriver() {
         driver.quit();
+    }
+
+    public void connectMongoDB() {
+        MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
+        MongoDatabase mongoDatabase = mongoClient.getDatabase("autodb");
+        mongoCollection = mongoDatabase.getCollection("userDB");
+    }
+    public void loadDatainToDB() {
+        Document document = new Document();
+        document.append("userName", "");
+        document.append("password","");
+
+        List<Document> documentList = new ArrayList<Document>();
+        documentList.add(document);
+        mongoCollection.insertMany(documentList);
     }
 }

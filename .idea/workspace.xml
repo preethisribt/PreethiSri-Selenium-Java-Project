@@ -4,17 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="API added validation for getAPI and deserialization">
-      <change afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/GetLocationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/LocationResponse.java" afterDir="false" />
+    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="Removed Json">
+      <change afterPath="$PROJECT_DIR$/ChainTestDockerCompose/docker-compose-h2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChainTestDockerCompose/docker-compose-mysql.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChainTestDockerCompose/docker-compose-postgres.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/chaintest.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/API_Test/ResReqTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/XML_Files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XML_Files/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Data/EcomData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/EcomData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/ExtentReportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/ExtentReportListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,27 +261,27 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java</url>
-          <line>32</line>
+          <line>29</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java</url>
-          <line>55</line>
+          <line>52</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Pages/LoginPage.java</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java</url>
-          <line>27</line>
+          <line>37</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java</url>
-          <line>33</line>
+          <line>34</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -286,53 +296,67 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java</url>
-          <line>21</line>
+          <line>22</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>137</line>
+          <line>135</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>117</line>
+          <line>115</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java</url>
-          <line>24</line>
+          <line>25</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>89</line>
+          <line>87</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>64</line>
+          <line>62</line>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>54</line>
+          <line>52</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>126</line>
+          <line>124</line>
           <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Utility/ExtentReportListener.java</url>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/LoginPage.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="104" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

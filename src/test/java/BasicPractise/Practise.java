@@ -1,10 +1,7 @@
 package BasicPractise;
 
 import BaseTest.BaseTestUtilityFile;
-import Utility.ExtentReportListener;
 import Utility.PagesUtility;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -33,11 +30,11 @@ public class Practise extends BaseTestUtilityFile {
         driver.get(actualURL);
         String actualURL = driver.getCurrentUrl();
         String actualTitle = driver.getTitle();
-        ExtentReportListener.extentTest.log(Status.INFO, "actualURL " +actualURL);
-        ExtentReportListener.extentTest.log(Status.INFO, "actualTitle " +actualTitle);
-
-        String sc = pagesUtility.getScreenshot("LoginPage", driver);
-        ExtentReportListener.extentTest.pass("LoginPage", MediaEntityBuilder.createScreenCaptureFromPath(sc).build());
+//        ExtentReportListener.extentTest.log(Status.INFO, "actualURL " +actualURL);
+//        ExtentReportListener.extentTest.log(Status.INFO, "actualTitle " +actualTitle);
+//
+//        String sc = pagesUtility.getScreenshot("LoginPage", driver);
+//        ExtentReportListener.extentTest.pass("LoginPage", MediaEntityBuilder.createScreenCaptureFromPath(sc).build());
 
         Assert.assertEquals(actualTitle, expectedTitle);
         Assert.assertEquals(actualURL, "https://omayo.blogspot.com/");
