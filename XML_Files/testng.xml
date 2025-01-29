@@ -5,19 +5,20 @@
     <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
     </listeners>
 
-    <test name="Basic Tests">
-        <classes>
-            <class name="BaseTest.BaseTestUtilityFile"/>
-            <class name="EcomApp.PurchaseProductTest"/>
-        </classes>
-    </test>
-    <!--    <test name="API Tests">-->
-    <!--        <classes>-->
-    <!--            <class name="API_Test.MapAPI.PlaceAPITest">-->
-    <!--                <methods>-->
-    <!--                    <include name="addAndGetPlace"/>-->
-    <!--                </methods>-->
-    <!--            </class>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+<!--    <test name="Basic Tests">-->
+<!--        <classes>-->
+<!--            <class name="BaseTest.BaseTestUtilityFile"/>-->
+<!--            <class name="EcomApp.PurchaseProductTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+        <test name="API Tests">
+            <classes>
+                <class name="API_Test.GoRestUserAPI">
+                    <methods>
+                        <include name="addAndValidateUserCreation"/>
+<!--                        <include name="getAllUsers"/>-->
+                    </methods>
+                </class>
+            </classes>
+        </test>
 </suite>

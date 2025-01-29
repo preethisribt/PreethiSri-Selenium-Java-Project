@@ -4,27 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="Removed Json">
-      <change afterPath="$PROJECT_DIR$/ChainTestDockerCompose/docker-compose-h2.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChainTestDockerCompose/docker-compose-mysql.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChainTestDockerCompose/docker-compose-postgres.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/chaintest.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/API_Test/ResReqTest.java" afterDir="false" />
+    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="updated files">
+      <change afterPath="$PROJECT_DIR$/src/main/java/APIResources/UserAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/API_Test/GoRestUserAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentTestReport/TestReport.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/XML_Files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XML_Files/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/EcomData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/EcomData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/ExtentReportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/ExtentReportListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/APIResources/Place/GetLocationResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/APIResources/Place/Location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/APIResources/Place/LocationResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/APIResources/Place/RegisterPlaceResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API_Test/ResReqTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,17 +101,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EcomDataProvider.getDataFromExcelusingObject" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoRestAPI.getAllUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PreethiSri-Selenium-Java-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Data.*" />
+          <option name="PATTERN" value="API_Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Data" />
-      <option name="MAIN_CLASS_NAME" value="Data.EcomDataProvider" />
-      <option name="METHOD_NAME" value="getDataFromExcelusingObject" />
+      <option name="PACKAGE_NAME" value="API_Test" />
+      <option name="MAIN_CLASS_NAME" value="API_Test.GoRestAPI" />
+      <option name="METHOD_NAME" value="getAllUsers" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoRestUserAPI.addUser (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PreethiSri-Selenium-Java-Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API_Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API_Test" />
+      <option name="MAIN_CLASS_NAME" value="API_Test.GoRestUserAPI" />
+      <option name="METHOD_NAME" value="addUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoRestUserAPI.addUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PreethiSri-Selenium-Java-Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API_Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API_Test" />
+      <option name="MAIN_CLASS_NAME" value="API_Test.GoRestUserAPI" />
+      <option name="METHOD_NAME" value="addUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -145,56 +173,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PurchaseProductTest.loginToApplication (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PreethiSri-Selenium-Java-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EcomApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="EcomApp" />
-      <option name="MAIN_CLASS_NAME" value="EcomApp.PurchaseProductTest" />
-      <option name="METHOD_NAME" value="loginToApplication" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PurchaseProductTest.loginToApplication" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PreethiSri-Selenium-Java-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EcomApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="EcomApp" />
-      <option name="MAIN_CLASS_NAME" value="EcomApp.PurchaseProductTest" />
-      <option name="METHOD_NAME" value="loginToApplication" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="TestNG.GoRestUserAPI.addUser" />
+      <item itemvalue="TestNG.GoRestUserAPI.addUser (1)" />
+      <item itemvalue="TestNG.GoRestAPI.getAllUsers" />
       <item itemvalue="TestNG.D:/GitHub public repo/PreethiSri-Selenium-Java-Project/XML_Files/testng.xml" />
-      <item itemvalue="TestNG.EcomDataProvider.getDataFromExcelusingObject" />
       <item itemvalue="TestNG.PurchaseProductTest.loginToApplication (1)" />
-      <item itemvalue="TestNG.PurchaseProductTest.loginToApplication (2)" />
-      <item itemvalue="TestNG.PurchaseProductTest.loginToApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.D:/GitHub public repo/PreethiSri-Selenium-Java-Project/XML_Files/testng.xml" />
+        <item itemvalue="TestNG.GoRestUserAPI.addUser (1)" />
+        <item itemvalue="TestNG.GoRestUserAPI.addUser" />
+        <item itemvalue="TestNG.GoRestAPI.getAllUsers" />
         <item itemvalue="TestNG.PurchaseProductTest.loginToApplication (1)" />
-        <item itemvalue="TestNG.PurchaseProductTest.loginToApplication" />
-        <item itemvalue="TestNG.EcomDataProvider.getDataFromExcelusingObject" />
-        <item itemvalue="TestNG.PurchaseProductTest.loginToApplication (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733719039809</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated files">
+      <created>1738053617986</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738053617986</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,7 +253,8 @@
     <MESSAGE value="Conflicts resolved in master" />
     <MESSAGE value="Parametarized test with excel" />
     <MESSAGE value="Removed Json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Json" />
+    <MESSAGE value="updated files" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -300,44 +300,14 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java</url>
           <line>18</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java</url>
           <line>25</line>
           <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/API_Test/MapAPI/PlaceAPITest.java</url>
-          <line>124</line>
-          <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Utility/ExtentReportListener.java</url>
@@ -357,6 +327,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java</url>
           <line>17</line>
           <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/API_Test/GoRestUserAPI.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="105" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
