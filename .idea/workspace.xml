@@ -4,38 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="updated files">
-      <change afterPath="$PROJECT_DIR$/src/test/java/API_Test/GoRest_Post_API.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebAppTest/CartPageTest.java" afterDir="false" />
+    <list default="true" id="6eef4683-4311-4ca9-9076-f5fbb7d23205" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChainTestReport/Email.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChainTestReport/Email.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChainTestReport/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChainTestReport/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/CartPage_2025_01_28T19_05_49.996455200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/CheckoutPage_2025_01_28T19_05_51.685722300.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ScreenShots/LoginPage_2024_11_30T18_58_20.524128500.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ScreenShots/LoginPage_2024_11_30T19_01_03.178402300.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/LoginPage_2025_01_28T19_05_40.203727600.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/OrderPage_2025_01_28T19_05_52.092692300.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/Product Gridwall Page_2025_01_28T19_05_43.829433400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/ProductPage_2025_01_28T19_05_46.649009700.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/XML_Files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XML_Files/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/APIResources/UserAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/APIResources/UserAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/EcomData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/EcomData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/EcomDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CategoryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/ExtentReportListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/PagesUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/PagesUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/API_Test/GoRestUserAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API_Test/GoRest_User_API.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/API_Test/ResReqTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/API_Test/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTestUtilityFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestUtility/BaseTestUtilityFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestUtility/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BasicPractise/Practise.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EcomApp/PurchaseProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebAppTest/PurchaseProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API_Test/GoRest_Post_API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API_Test/GoRest_Post_API.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Practise" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

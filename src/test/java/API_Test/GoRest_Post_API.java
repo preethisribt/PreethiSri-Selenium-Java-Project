@@ -34,13 +34,6 @@ public class GoRest_Post_API {
         Assert.assertTrue(responseTime < 3000, "Response time below 3000 MS");
     }
 
-    @Test(groups = {"API"})
-    public void addPostAndValidateItUnderUserProfile() {
-//        addPost(7668670);
-        System.out.println("Accessing response-----------------");
-        System.out.println(response);
-    }
-
     public void addPost(int userID) {
         baseURI = "https://gorest.co.in/public/v2/";
 
