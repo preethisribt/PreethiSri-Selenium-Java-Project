@@ -1,13 +1,11 @@
 package Pages;
 
-import Utility.PagesUtility;
 import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import java.io.IOException;
-import java.lang.reflect.Method;
 
 public class LoginPage {
     WebDriver driver;

@@ -1,4 +1,4 @@
-package APIResources;
+package Pages.APIResources;
 
 
 import lombok.AllArgsConstructor;

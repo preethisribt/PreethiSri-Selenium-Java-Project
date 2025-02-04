@@ -1,44 +1,27 @@
 package API_Test;
 
-import APIResources.UserAPI;
+import Pages.APIResources.UserAPI;
 import com.aventstack.chaintest.plugins.ChainTestListener;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 import static io.restassured.RestAssured.*;
 
-public class GoRestUserAPI {
+public class GoRest_User_API {
     Faker faker;
     UserAPI userAPI;
     int userID;
 
-    @Test
-    public void getAllUsers() {
-        baseURI = "https://gorest.co.in/public/v2/";
 
-        Response response = given().log().all()
-                .queryParam("Authorization", "Bearer 220d22050c1ef6cedefd5f8053a340865d6aec532b8096a7f203b6fd6b5ec63c")
-                .when()
-                .get("/users/?page=1&per_page=10");
 
-        String statusLineResponse = response.statusLine();
-        int statusCodeResponse = response.statusCode();
-
-        ChainTestListener.log("Response  " + response.asPrettyString());
-        ChainTestListener.log("Response Status Line " + statusLineResponse);
-        ChainTestListener.log("Response Status Code " + statusCodeResponse);
-
-        Assert.assertEquals(statusLineResponse, "HTTP/1.1 200 OK");
-        Assert.assertEquals(statusCodeResponse, 200);
-
-    }
-
-    @Test
+    @Test(groups = {"API"})
     public void addAndValidateUserCreation() {
-//        addUser();
-        getParticularUsers(7663080);
+        addUser();
+        getParticularUsers(userID);
     }
 
     public void addUser() {
@@ -55,7 +38,7 @@ public class GoRestUserAPI {
         userAPI.setStatus("active");
 
         Response response = given().log().all()
-                .queryParam("access-token", "220d22050c1ef6cedefd5f8053a340865d6aec532b8096a7f203b6fd6b5ec63c")
+                .header("Authorization", "Bearer 220d22050c1ef6cedefd5f8053a340865d6aec532b8096a7f203b6fd6b5ec63c")
                 .header("Content-Type", "application/json")
                 .body(userAPI)
                 .when()
@@ -92,12 +75,6 @@ public class GoRestUserAPI {
 
         userAPI = response.as(UserAPI.class);
         int actualID = userAPI.getId();
-
-        ChainTestListener.log("ID  " +  actualID);
-        ChainTestListener.log("Name  " + userAPI.getName());
-        ChainTestListener.log("Email  " + userAPI.getEmail());
-        ChainTestListener.log("Gender  " + userAPI.getGender());
-        ChainTestListener.log("Status  " + userAPI.getStatus());
 
         Assert.assertEquals(statusLineResponse, "HTTP/1.1 200 OK");
         Assert.assertEquals(statusCodeResponse, 200);

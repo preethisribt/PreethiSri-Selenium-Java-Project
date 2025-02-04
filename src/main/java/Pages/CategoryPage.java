@@ -1,13 +1,9 @@
 package Pages;
 
-import Utility.PagesUtility;
 import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-
-import java.io.IOException;
-import java.lang.reflect.Method;
 
 public class CategoryPage {
     WebDriver driver;
@@ -24,13 +20,16 @@ public class CategoryPage {
 
     public void selectCategory(String category)  {
         switch (category) {
-            case "phone":
+            case "Phone":
+                pagesUtility.waitForElementVisibility(driver,phonesCategoryLink);
                 driver.findElement(phonesCategoryLink).click();
                 break;
-            case "laptop":
+            case "Laptop":
+                pagesUtility.waitForElementVisibility(driver,laptopsCategoryLink);
                 driver.findElement(laptopsCategoryLink).click();
                 break;
-            case "monitor":
+            case "Monitor":
+                pagesUtility.waitForElementVisibility(driver,monitorCategoryLink);
                 driver.findElement(monitorCategoryLink).click();
                 break;
 

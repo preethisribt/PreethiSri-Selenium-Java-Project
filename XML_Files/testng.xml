@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="PreethiSri-Selenium-Java-Project" verbose="5">
+<!--    <groups>-->
+<!--        <run>-->
+<!--&lt;!&ndash;            <include name="Web"/>&ndash;&gt;-->
+<!--            <include name="API"/>-->
+<!--        </run>-->
+<!--    </groups>-->
+
     <listeners>
-    <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
+        <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
     </listeners>
 
-<!--    <test name="Basic Tests">-->
-<!--        <classes>-->
-<!--            <class name="BaseTest.BaseTestUtilityFile"/>-->
-<!--            <class name="EcomApp.PurchaseProductTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-        <test name="API Tests">
-            <classes>
-                <class name="API_Test.GoRestUserAPI">
-                    <methods>
-                        <include name="addAndValidateUserCreation"/>
-<!--                        <include name="getAllUsers"/>-->
-                    </methods>
-                </class>
-            </classes>
-        </test>
+    <test name="Web and API Tests">
+        <classes>
+            <class name="TestUtility.BaseTestUtilityFile"/>
+<!--            <class name="WebAppTest.PurchaseProductTest"/>-->
+<!--            <class name="WebAppTest.CartPageTest"/>-->
+<!--            <class name="API_Test.GoRest_User_API"/>-->
+            <class name="API_Test.GoRest_Post_API"/>
+        </classes>
+    </test>
 </suite>

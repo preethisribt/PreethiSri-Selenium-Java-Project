@@ -1,6 +1,6 @@
-package BaseTest;
+package TestUtility;
 
-import Utility.PagesUtility;
+import Pages.PagesUtility;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
@@ -9,7 +9,6 @@ import org.bson.Document;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -21,7 +20,7 @@ public class BaseTestUtilityFile {
 
     MongoCollection<Document> mongoCollection;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void initializeDriver() throws IOException {
         DriverFactory driverFactory = new DriverFactory();
         PagesUtility pagesUtility = new PagesUtility();
@@ -33,7 +32,7 @@ public class BaseTestUtilityFile {
         driver.manage().window().maximize();
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void quitDriver() {
         driver.quit();
     }

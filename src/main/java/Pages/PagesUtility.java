@@ -1,4 +1,4 @@
-package Utility;
+package Pages;
 
 import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.apache.commons.io.FileUtils;
@@ -23,10 +23,6 @@ import io.restassured.specification.ResponseSpecification;
 
 public class PagesUtility {
     public static File src;
-    public ResponseSpecification getResponseSpecification(String statusLine) {
-        ResponseSpecification responseSpecification = new ResponseSpecBuilder().expectStatusLine(statusLine).build();
-        return responseSpecification;
-    }
 
     public void getScreenshot(String page, WebDriver driver) throws IOException {
         TakesScreenshot screenshot = ((TakesScreenshot) driver);
@@ -48,12 +44,12 @@ public class PagesUtility {
     }
 
     public void waitForElementVisibility(WebDriver driver, By element) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1000));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
         wait.until(ExpectedConditions.visibilityOfElementLocated(element));
     }
 
     public void waitForAlert(WebDriver driver) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1000));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
         wait.until(ExpectedConditions.alertIsPresent());
     }
 }

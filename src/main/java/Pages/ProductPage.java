@@ -1,6 +1,5 @@
 package Pages;
 
-import Utility.PagesUtility;
 import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -8,30 +7,43 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import java.io.IOException;
-import java.lang.reflect.Method;
 
 public class ProductPage {
     WebDriver driver;
     PagesUtility pagesUtility;
+    CategoryPage categoryPage;
+    static String[] products;
 
     public ProductPage(WebDriver driver) {
         this.driver = driver;
         this.pagesUtility = new PagesUtility();
+        this.categoryPage = new CategoryPage(driver);
     }
 
-    By selectProductLink = By.xpath("//a[text()='Apple monitor 24']");
     By addToCartButton = By.xpath("//a[text()='Add to cart']");
+    By homeLink = By.xpath("//a[text()='Home ']");
 
-    public void selectProduct(String product) throws IOException {
+    public void selectProductFromSpecificCategory(String category, String allProducts) throws IOException {
         pagesUtility.getScreenshot("Product Gridwall Page", driver);
-        pagesUtility.waitForElementVisibility(driver, selectProductLink);
-        driver.findElement(selectProductLink).click();
-        ChainTestListener.log("product " + product + "is selected");
 
-        pagesUtility.waitForElementVisibility(driver, addToCartButton);
-        pagesUtility.getScreenshot("ProductPage", driver);
-        driver.findElement(addToCartButton).click();
-        ChainTestListener.log("product " + product + "added to cart");
+       products = allProducts.split(",");
+
+        for (String product : products) {
+            categoryPage.selectCategory(category);
+
+            By element = By.xpath("//a[text()='" + product.trim() + "']");
+            pagesUtility.waitForElementVisibility(driver, element);
+            driver.findElement(element).click();
+            ChainTestListener.log("product " + product + "is selected");
+
+            pagesUtility.waitForElementVisibility(driver, addToCartButton);
+            pagesUtility.getScreenshot("ProductPage", driver);
+            driver.findElement(addToCartButton).click();
+            ChainTestListener.log("product " + product + "added to cart");
+
+            verifyProductAddedInCartPopup();
+            navigateToHome();
+        }
     }
 
     public void verifyProductAddedInCartPopup() {
@@ -39,7 +51,12 @@ public class ProductPage {
         Alert alert = driver.switchTo().alert();
         String actualMessage = alert.getText();
 
-        Assert.assertEquals(actualMessage,"Product added.");
+        Assert.assertEquals(actualMessage, "Product added.");
         alert.accept();
+    }
+
+    public void navigateToHome() {
+        driver.findElement(homeLink).click();
+        ChainTestListener.log("Navigated To Home Page");
     }
 }
