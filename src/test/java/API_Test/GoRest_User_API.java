@@ -1,13 +1,11 @@
 package API_Test;
 
-import Pages.APIResources.UserAPI;
+import Pages.API_Mapping.UserAPI;
 import com.aventstack.chaintest.plugins.ChainTestListener;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
 
 import static io.restassured.RestAssured.*;
 
