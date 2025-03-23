@@ -1,3 +1,5 @@
 ecomURL = https://www.demoblaze.com/
 userName = preethi@gmail.com
 password = preethi@123
+browser = chrome
+isGrid = false

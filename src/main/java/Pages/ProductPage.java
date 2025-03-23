@@ -16,7 +16,7 @@ public class ProductPage {
 
     public ProductPage(WebDriver driver) {
         this.driver = driver;
-        this.pagesUtility = new PagesUtility();
+        this.pagesUtility = new PagesUtility(driver);
         this.categoryPage = new CategoryPage(driver);
     }
 
@@ -24,7 +24,7 @@ public class ProductPage {
     By homeLink = By.xpath("//a[text()='Home ']");
 
     public void selectProductFromSpecificCategory(String category, String allProducts) throws IOException {
-        pagesUtility.getScreenshot("Product Gridwall Page", driver);
+        pagesUtility.getScreenshot("Product Gridwall Page");
 
        products = allProducts.split(",");
 
@@ -32,12 +32,12 @@ public class ProductPage {
             categoryPage.selectCategory(category);
 
             By element = By.xpath("//a[text()='" + product.trim() + "']");
-            pagesUtility.waitForElementVisibility(driver, element);
+            pagesUtility.waitForElementVisibility(element);
             driver.findElement(element).click();
             ChainTestListener.log("product " + product + "is selected");
 
-            pagesUtility.waitForElementVisibility(driver, addToCartButton);
-            pagesUtility.getScreenshot("ProductPage", driver);
+            pagesUtility.waitForElementVisibility(addToCartButton);
+            pagesUtility.getScreenshot("ProductPage");
             driver.findElement(addToCartButton).click();
             ChainTestListener.log("product " + product + "added to cart");
 
@@ -47,7 +47,7 @@ public class ProductPage {
     }
 
     public void verifyProductAddedInCartPopup() {
-        pagesUtility.waitForAlert(driver);
+        pagesUtility.waitForAlert();
         Alert alert = driver.switchTo().alert();
         String actualMessage = alert.getText();
 

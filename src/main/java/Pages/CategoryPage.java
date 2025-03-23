@@ -11,7 +11,7 @@ public class CategoryPage {
 
     public CategoryPage(WebDriver driver) {
         this.driver = driver;
-        this.pagesUtility = new PagesUtility();
+        this.pagesUtility = new PagesUtility(driver);
     }
 
     By phonesCategoryLink = By.xpath("//a[text()='Phones']");
@@ -21,15 +21,15 @@ public class CategoryPage {
     public void selectCategory(String category)  {
         switch (category) {
             case "Phone":
-                pagesUtility.waitForElementVisibility(driver,phonesCategoryLink);
+                pagesUtility.waitForElementVisibility(phonesCategoryLink);
                 driver.findElement(phonesCategoryLink).click();
                 break;
             case "Laptop":
-                pagesUtility.waitForElementVisibility(driver,laptopsCategoryLink);
+                pagesUtility.waitForElementVisibility(laptopsCategoryLink);
                 driver.findElement(laptopsCategoryLink).click();
                 break;
             case "Monitor":
-                pagesUtility.waitForElementVisibility(driver,monitorCategoryLink);
+                pagesUtility.waitForElementVisibility(monitorCategoryLink);
                 driver.findElement(monitorCategoryLink).click();
                 break;
 

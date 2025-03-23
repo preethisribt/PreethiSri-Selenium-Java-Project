@@ -8,7 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import static io.restassured.RestAssured.*;
 
@@ -27,7 +26,7 @@ public class GoRest_Post_API {
 
         String statusLineResponse = response.statusLine();
         int statusCodeResponse = response.statusCode();
-        long responseTime = response.getTimeIn(TimeUnit.MILLISECONDS);
+        long responseTime = response.getTime();
         users = response.jsonPath().getList("", UserAPI.class);
 
         ChainTestListener.log("Response  " + response.asPrettyString());
@@ -66,7 +65,7 @@ public class GoRest_Post_API {
 
         String statusLineResponse = response.getStatusLine();
         int statusCodeResponse = response.getStatusCode();
-        long responseTime = response.getTimeIn(TimeUnit.MILLISECONDS);
+        long responseTime = response.getTime();
 
         ChainTestListener.log("Response " + response.asPrettyString());
         ChainTestListener.log("Response Status Line" + statusLineResponse);

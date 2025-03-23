@@ -20,9 +20,9 @@ public class DriverFactory {
     }
 
     public WebDriver getDriver(String browserName) {
-    return driverMap.getOrDefault(browserName.toLowerCase().trim(),()->{
-                throw new Error("Browser Driver not found, provide valid browser");
-            }).get();
+        return driverMap.getOrDefault(browserName.toLowerCase().trim(), () -> {
+            throw new Error("Browser Driver not found, provide valid browser");
+        }).get();
     }
 
     public WebDriver chromeDriver() {

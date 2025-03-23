@@ -16,11 +16,12 @@ public class CartPage {
 
     public CartPage(WebDriver driver) {
         this.driver = driver;
-        this.pagesUtility = new PagesUtility();
+        this.pagesUtility = new PagesUtility(driver);
         this.productPage = new ProductPage(driver);
     }
 
     By cartLink = By.xpath("//a[text()='Cart']");
+    By cartTableRow = By.cssSelector("#tbodyid tr");
     By cartData = By.xpath("//tr[@class='success']");
     By placeOrderButton = By.xpath("//button[text()='Place Order']");
     By purchaseButton = By.xpath("//button[text()='Purchase']");
@@ -38,29 +39,35 @@ public class CartPage {
 
     public void navigateToCart() {
         driver.findElement(cartLink).click();
-        pagesUtility.waitForElementVisibility(driver, cartTable);
+        pagesUtility.waitForElementVisibility(cartTable);
     }
 
     public void deleteProductFromCart() throws IOException, InterruptedException {
         Thread.sleep(2000);  //no other wait condition can be added, since we are not sure cart will have element or not
         List<WebElement> deleteProduct = driver.findElements(deleteLink);
-        pagesUtility.getScreenshot("CartPage", driver);
+        pagesUtility.getScreenshot("CartPage");
 
         if (deleteProduct.size() > 0) {
             for (WebElement element : deleteProduct) {
-                pagesUtility.waitForElementVisibility(driver, deleteLink);
+                pagesUtility.waitForElementVisibility(deleteLink);
                 element.click();
             }
             ChainTestListener.log("Deleted Products from cart - cart now empty");
         } else
             ChainTestListener.log("cart is already empty");
 
-        pagesUtility.getScreenshot("ClearCartPage", driver);
+        pagesUtility.getScreenshot("ClearCartPage");
+    }
+
+    public void checkCartIsEmpty() throws IOException {
+        int cartActualRows = driver.findElements(cartTableRow).size();
+        Assert.assertEquals(cartActualRows, 0);
+        pagesUtility.getScreenshot("CartPageValidation");
     }
 
     public void validateProductPresentInCart() throws IOException {
-        pagesUtility.waitForElementVisibility(driver, cartData);
-        pagesUtility.getScreenshot("CartPage", driver);
+        pagesUtility.waitForElementVisibility(cartData);
+        pagesUtility.getScreenshot("CartPage");
 
         for (String product : productPage.products) {
             boolean elementInCart = driver.findElement(By.xpath("//tbody[@id='tbodyid']//td[text()='" + product.trim() + "']")).isDisplayed();
@@ -70,7 +77,7 @@ public class CartPage {
 
     public void placeOrder() throws IOException {
         driver.findElement(placeOrderButton).click();
-        pagesUtility.waitForElementVisibility(driver, nameText);
+        pagesUtility.waitForElementVisibility(nameText);
 
         driver.findElement(nameText).sendKeys("abstest");
         driver.findElement(countryText).sendKeys("Australia");
@@ -79,13 +86,13 @@ public class CartPage {
         driver.findElement(monthText).sendKeys("09");
         driver.findElement(yearText).sendKeys("2030");
 
-        pagesUtility.getScreenshot("CheckoutPage", driver);
+        pagesUtility.getScreenshot("CheckoutPage");
         driver.findElement(purchaseButton).click();
     }
 
     public void orderMessageValidation() throws IOException {
-        pagesUtility.waitForElementVisibility(driver, okButton);
-        pagesUtility.getScreenshot("OrderPage", driver);
+        pagesUtility.waitForElementVisibility(okButton);
+        pagesUtility.getScreenshot("OrderPage");
 
         boolean expectedThankyouMessage = driver.findElement(orderThankyouMessage).isDisplayed();
         Assert.assertTrue(expectedThankyouMessage);
