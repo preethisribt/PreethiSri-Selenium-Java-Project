@@ -13,5 +13,4 @@ public class UserAPI {
     String gender;
     String status;
     int id;
-
 }

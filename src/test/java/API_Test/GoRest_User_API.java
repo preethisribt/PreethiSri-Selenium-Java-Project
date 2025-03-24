@@ -19,7 +19,7 @@ public class GoRest_User_API {
     @Test(groups = {"API"})
     public void addAndValidateUserCreation() {
         addUser();
-        getParticularUsers(userID);
+        getUserByID(userID);
     }
 
     public void addUser() {
@@ -56,7 +56,7 @@ public class GoRest_User_API {
         userID = userAPI.getId();
     }
 
-    public void getParticularUsers(int userID) {
+    public void getUserByID(int userID) {
         baseURI = "https://gorest.co.in/public/v2/";
 
         Response response = given().log().all()
